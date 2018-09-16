@@ -185,7 +185,7 @@ def task2():
     print("###TASK2###")
     numlist=get_num()
     try:
-        len(numlist):
+        len(numlist)
         is_int(numlist)
     except:
         pass
