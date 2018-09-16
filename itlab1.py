@@ -21,7 +21,7 @@ def Y_N (answer="non"):
 def task1():
     i=0
     
-    q1="Is the country in euroup?"
+    q1="Is the country in Europe?"
     
     q2="Is the country largest country?"
     
@@ -29,7 +29,7 @@ def task1():
     
     q4="Is the country nearby a sea?"
     
-    q5="Is the country in asian?"
+    q5="Is the country in Asian?"
     
     q6="Does the country has the best economy?"
     
@@ -184,8 +184,11 @@ def is_int(numlist):
 def task2():
     print("###TASK2###")
     numlist=get_num()
-    if len(numlist):
+    try:
+        len(numlist):
         is_int(numlist)
+    except:
+        pass
 
 
 
@@ -214,7 +217,7 @@ def gnomesort(numlist):
                 i,j = j,j+1
     print("Gnome sort")
     print(numlist)
-
+nL1=''
 def blocksort(numlist):
     global nL1
     #print("Splitting ",numlist) alot of splitting...
@@ -269,7 +272,7 @@ def task3():
 
 ###part4###
 def task4():
-    print("###TASK3###")
+    print("###TASK4###")
     C=30.0
     D=300
     P_d=D*(1/3.0)*(int(input("In 30 days it happend N times \n N=?:"))/C)
