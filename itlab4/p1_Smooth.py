@@ -70,9 +70,9 @@ def Median_filter(lis,level=5):
         
         
 
-Moving_average(randlist,level=5)
+Moving_average(randlist,level=10)
 Savitzky_Golay(randlist)
-First_order_filter(randlist,0.1)
-Median_filter(randlist,level=7)
+First_order_filter(randlist,0.01)
+Median_filter(randlist,level=8)
 plt.legend(loc='upper right')
 plt.show()
